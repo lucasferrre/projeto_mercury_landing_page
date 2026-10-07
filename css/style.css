@@ -1,0 +1,541 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #050a16;
+    color: #e9eef7;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mercury-nav {
+    background: #050a16;
+    border-bottom: 1px solid rgba(77, 156, 255, 0.2);
+    min-height: 72px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+}
+
+.logo-empresa {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.nome-empresa {
+    width: 170px;
+    height: auto;
+    object-fit: contain;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-left: auto;
+}
+
+.navbar-links a {
+    color: #aebbd0;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+    color: #4f9bff;
+}
+
+.hero {
+    background:
+        radial-gradient(circle at 80% 45%, rgba(36, 102, 190, 0.18), transparent 28%),
+        linear-gradient(135deg, #050a16 0%, #071326 100%);
+    min-height: 82vh;
+    display: flex;
+    align-items: center;
+}
+
+.min-vh-75 {
+    min-height: 70vh;
+}
+
+.eyebrow {
+    color: #4f9bff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16rem;
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    font-size: clamp(4rem, 10vw, 8rem);
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.hero h2 {
+    max-width: 680px;
+    font-size: clamp(1.5rem, 3vw, 2.6rem);
+    font-weight: 400;
+    color: #cbd5e4;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin: 25px 0;
+    color: #95a5bd;
+    font-size: 1.05rem;
+}
+
+.mercury-logo {
+    width: 490px;
+    max-width: 100%;
+    height: auto;
+    border: none;
+    background: transparent;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-mercury {
+    background: #1f6bff;
+    border: 1px solid #1f6bff;
+    color: #ffffff;
+    padding: 12px 22px;
+}
+
+.btn-mercury:hover {
+    background: #4f9bff;
+    border-color: #4f9bff;
+    color: #ffffff;
+}
+
+.btn-outline-mercury {
+    border: 1px solid #4f9bff;
+    color: #75b4ff;
+    padding: 11px 20px;
+}
+
+.btn-outline-mercury:hover {
+    background: #1f6bff;
+    color: #ffffff;
+}
+
+.section-light {
+    background: #f2f5f9;
+    color: #172033;
+}
+
+.section-dark {
+    background: #07101f;
+    color: #e9eef7;
+}
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.1;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.section-light .eyebrow {
+    color: #145bd7;
+}
+
+.info-card,
+.mission-card,
+.step-card,
+.threat-card {
+    height: 100%;
+    padding: 28px;
+    border: 1px solid rgba(18, 72, 145, 0.16);
+    background: #ffffff;
+}
+
+.info-card h3,
+.step-card h3,
+.threat-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+}
+
+.info-card p,
+.step-card p,
+.threat-card p,
+.mission-card p {
+    margin: 0;
+    color: #607087;
+}
+
+.logo-panel {
+    width: 100%;
+    border: 1px solid rgba(79, 155, 255, 0.25);
+}
+
+.identity-item {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(151, 180, 220, 0.18);
+}
+
+.identity-item h3 {
+    color: #75b4ff;
+    font-size: 1.25rem;
+}
+
+.identity-item p {
+    color: #aebbd0;
+    margin-bottom: 0;
+}
+
+.identity-final {
+    color: #ffffff;
+    font-size: 1.05rem;
+    margin-top: 25px;
+}
+
+.mission-card {
+    border-top: 4px solid #1f6bff;
+}
+
+.mission-card span {
+    display: block;
+    color: #145bd7;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    margin-bottom: 12px;
+}
+
+.aquila-section {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+
+    background:
+        url("../assets/images/constelacao_aquila.png") center center / cover no-repeat;
+
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.aquila-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+            rgba(5, 11, 24, 0.97) 0%,
+            rgba(5, 11, 24, 0.88) 28%,
+            rgba(5, 11, 24, 0.58) 58%,
+            rgba(5, 11, 24, 0.70) 100%);
+
+    z-index: 0;
+}
+
+.aquila-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(180deg,
+            rgba(5, 10, 22, 0.30) 0%,
+            transparent 45%,
+            rgba(5, 10, 22, 0.70) 100%);
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+.aquila-section .container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.aquila-section .row {
+    width: 100%;
+    align-items: center;
+}
+
+.aquila-title {
+    font-size: clamp(3.2rem, 5.5vw, 5.5rem);
+    line-height: 0.95;
+    color: #ffffff;
+    margin-bottom: 18px;
+    letter-spacing: -0.045em;
+    font-weight: 600;
+}
+
+.aquila-section h3 {
+    color: #75b4ff;
+    font-weight: 400;
+    font-size: clamp(1.25rem, 2.2vw, 1.9rem);
+    line-height: 1.35;
+    margin-bottom: 24px;
+    max-width: 650px;
+}
+
+.aquila-section p {
+    color: #c2cede;
+    max-width: 650px;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.aquila-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 420px;
+    background: transparent;
+}
+
+.aquila-logo {
+    width: min(430px, 90%);
+    height: auto;
+    display: block;
+    object-fit: contain;
+
+    filter:
+        drop-shadow(0 0 20px rgba(31, 107, 255, 0.18)) drop-shadow(0 0 45px rgba(31, 107, 255, 0.12));
+}
+
+.aquila-intro {
+    margin-top: 20px;
+}
+
+.aquila-intro p {
+    margin-bottom: 0;
+}
+
+.aquila-details {
+    margin-top: 55px;
+    padding-top: 35px;
+    border-top: 1px solid rgba(151, 180, 220, 0.18);
+}
+
+.aquila-detail {
+    padding-right: 30px;
+}
+
+.aquila-detail:not(:last-child) {
+    border-right: 1px solid rgba(151, 180, 220, 0.15);
+}
+
+.aquila-detail h4 {
+    color: #75b4ff;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.aquila-detail p {
+    color: #91a3bd;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    margin-bottom: 0;
+}
+
+.aquila-identity {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.aquila-identity .section-title {
+    max-width: 850px;
+}
+
+.aquila-identity-intro {
+    max-width: 760px;
+    color: #aebbd0;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.aquila-identity-card {
+    height: 100%;
+    padding: 30px;
+    border: 1px solid rgba(105, 153, 220, 0.18);
+    background: rgba(7, 16, 31, 0.72);
+}
+
+.aquila-identity-card span {
+    display: block;
+    color: #4f9bff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    margin-bottom: 14px;
+}
+
+.aquila-identity-card h3 {
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.aquila-identity-card p {
+    color: #91a3bd;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.aquila-symbolism {
+    margin-top: 70px;
+}
+
+.aquila-symbolism h3 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.aquila-symbolism p {
+    max-width: 800px;
+    color: #aebbd0;
+}
+
+@media (max-width: 991px) {
+    .aquila-section {
+        min-height: auto;
+        padding: 110px 0;
+    }
+
+    .aquila-section .container {
+        min-height: auto;
+    }
+
+    .aquila-logo-container {
+        min-height: 320px;
+        margin-top: 40px;
+    }
+
+    .aquila-logo {
+        width: min(360px, 80%);
+    }
+
+    .aquila-details {
+        margin-top: 40px;
+    }
+
+    .aquila-detail {
+        padding-right: 0;
+        padding-bottom: 25px;
+    }
+
+    .aquila-detail:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid rgba(151, 180, 220, 0.15);
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .aquila-section {
+        padding: 90px 0;
+    }
+
+    .aquila-title {
+        font-size: 3.2rem;
+    }
+
+    .aquila-logo-container {
+        min-height: 260px;
+    }
+
+    .aquila-logo {
+        width: 85%;
+    }
+
+    .aquila-identity {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+.step-card span {
+    display: block;
+    color: #145bd7;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    margin-bottom: 12px;
+}
+
+.team-card {
+    height: 100%;
+    padding: 20px;
+    border: 1px solid rgba(105, 153, 220, 0.2);
+    background: #091525;
+    overflow: hidden;
+}
+
+.team-photo {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+    margin-bottom: 20px;
+}
+
+.team-card h3 {
+    margin-bottom: 4px;
+}
+
+.team-card p {
+    color: #8294ae;
+    margin: 0;
+}
+
+.closing-section {
+    background: #0a1423;
+    color: #ffffff;
+}
+
+.closing-section h2 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    margin-bottom: 20px;
+}
+
+.closing-section>.container>p:not(.eyebrow):not(.closing-line) {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #aebbd0;
+}
+
+.closing-line {
+    color: #4f9bff;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.footer {
+    background: #030711;
+    color: #6f809a;
+    font-size: 0.85rem;
+}
